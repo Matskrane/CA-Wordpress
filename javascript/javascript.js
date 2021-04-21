@@ -3,14 +3,14 @@ fetch(url)
 .then(response => response.json())
 .then(data => {
     //console.log('Success:', data);
-listPosts(data);
+listProducts(data);
 })
 .catch((error) => {
     console.error('Error:', error);
 });
 
 const output = document.querySelector("#products");
-function listPosts (products) {
+function listProducts (products) {
     let myList = "";
     for (let product of products) {
         console.log(product);        
