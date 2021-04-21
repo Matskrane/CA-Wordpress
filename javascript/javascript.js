@@ -17,8 +17,8 @@ function listPosts (products) {
         
         myList += `        
          <li>            
-         <a href="post.html?id=${product.id}">
-         ${product.title.rendered}            
+         <a href="product.html?id=${product.id}">
+         ${product.name}            
          </a>        
          </li>`;
             }
